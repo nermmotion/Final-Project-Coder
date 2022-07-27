@@ -4,150 +4,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Inicio | Bistro UNAV</title>
 </head>
 <body>
 
     <!-- =================== Header Start =================== -->
 
-    <header class="topheader">
-        <nav class="topnav">
-            <a href="index.html" class="logo">
-                <img src="images/Logo.png" alt="Logo Bistro">
-            </a>
-            <ul class="menu">
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="pages/acerca.html">Acerca de</a></li>
-                <li><a href="pages/menu.html">Menu</a></li>
-                <li><a href="pages/faqs.html">Faqs</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-            <div class="open-menu">
-                <button  aria-label="Abrir menú">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                </button>
-            </div>
-            <!-- <button class="close-menu" aria-label="Cerrar menú">
-                <i class="fa-solid fa-xmark"></i>
-            </button> -->
-            <a href="#" class="nav-call"><button>+52 283 382 9284</button></a>
-        </nav>
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container d-flex justify-content-between">
+                  <a class="navbar-brand logo" href="index.html"><img src="images/Logo.png" alt="Logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="container-fluid col-lg-8 navbar-nav gap-2 justify-content-end me-auto mb-2 mb-lg-0">
+                          <li class="nav-item text-center">
+                              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="./pages/acerca.html">Acerca de</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="./pages/menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="./pages/faqs.html">Faqs</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <div class="nav-button text-center">
+                            <button class="nav-call">+52 283 382 9284</button>
+                        </div>
+                    </div>
+                </div>
+              </nav>
+        </div>
     </header>
 
     <!-- =================== Header End =================== -->
 
-    <!-- =================== Hero Section Start =================== -->
+    <!-- ======================= Hero Section Start ======================= -->
 
-    <section class="hero-banner-index">
-        <div class="hero-banner-index_content">
-                <h1>Good food choices are good investments</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cumque facilis architecto sapiente et tenetur commodi.</p>
-                <button href="#" class="hero-banner-index_content--btn1">Ordenar Ahora</button>
-                <button href="#" class="hero-banner-index_content--btn2">Saber Más</button>
+    <section class="index-banner">
+        <div class="container col-lg-12  col-10">
+            <div class="row">
+                <div class="align-items-center site-title">
+                    <h1 class="animate__animated animate__fadeInUp fw-bold display-5 mt-5 mb-2">Good food <br>choices are good<br>investments</h1>
+                    <p class="animate__animated animate__fadeInUp animate__delay-1s mt-3 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Minus cumque facilis architecto sapiente et tenetur commodi.</p>
+                    <div class="col-12">
+                        <button href="#" class="animate__animated animate__fadeInUp animate__delay-2s btn1 mr-4">Ordenar Ahora</button>
+                        <button href="#" class="animate__animated animate__fadeInUp animate__delay-2s btn2 ms-3">Saber Más</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- =================== Hero Section Start =================== -->
 
     <!-- ======================= Section Content Start ======================= -->
-    <section class="datos">
-        <div class="datos_column">
-            <h3>1235+</h3>
-            <p>Clientes</p>
-        </div>
-        <div class="datos_column">
-            <h3>3287+</h3>
-            <p>Ingredientes</p>
-        </div>
-        <div class="datos_column">
-            <h3>1440+</h3>
-            <p>Sabores</p>
-        </div>
-        <div class="datos_column">
-            <h3>210+</h3>
-            <p>Platillos</p>
+    <section class="container-fluid d-flex align-items-center datos">
+        <div class="container align-middle col-12 d-flex flex-row justify-content-around text-center items-datos">
+            <div class="wow animate__animated animate__fadeInUp">
+                <h3 class="fw-bolder fs-2">+1235</h3>
+                <p>Clientes</p>
+            </div>
+            <div class="wow animate__animated animate__fadeInUp animate__delay-1s">
+                <h3 class="fw-bolder fs-2">+3287</h3>
+                <p>Ingredientes</p>
+            </div>
+            <div class="wow animate__animated animate__fadeInUp animate__delay-2s">
+                <h3 class="fw-bolder fs-2">+1440</h3>
+                <p>Sabores</p>
+            </div>
+            <div class="wow animate__animated animate__fadeInUp animate__delay-3s">
+                <h3 class="fw-bolder fs-2">+210</h3>
+                <p>Platillos</p>
+            </div>
         </div>
     </section>
-    <section class="info-index">
-        <div class="info-index_container">
-            <div class="info-index-image">
-                <img src="images/index-page/info.png" alt="Bistro info">
+    <section class="container-fluid info-index">
+        <div class="container d-lg-flex col-10 col-lg-12 text-center text-lg-start align-items-center justify-content-between info-index-content">
+            <div class="mb-4 mb-lg-0 info-index_image">
+                <img class="wow animate__animated animate__fadeInLeft rounded mx-auto d-block" src="images/index-page/info.png" alt="Bistro info">
             </div>
-            <div class="info-index_container-content">
-                <h2>We pride ourselves on making real food fron the best ingredients.</h2>
+            <div class="info-index_container-content wow animate__animated animate__fadeInRight animate__delay-1s">
+                <h2 class="fw-bold">We pride ourselves on making real food fron the best ingredients.</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ipsam dolore dignissimos quas aperiam ad voluptatibus reprehenderit doloribus.</p>
                 <button href="#">Saber Más</button>
             </div>
         </div>
     </section>
-    <section class="video-banner">
-        <div class="video-form">
-            <div class="video-banner_info">
-                <h2>When a man's stomach is full it makes no difference wheter he is rich or poor</h2>
+    <section class="container-fluid video-banner">
+        <div class="container col-10 col-lg-6 pt-5 pb-5 video-form">
+            <div class="d-grid gap-1 align-items-center text-center video-banner_info wow animate__animated animate__fadeInUp animate__delay-1s">
+                <h2 class="fw-bolder">When a man's stomach is full it makes no difference wheter he is rich or poor</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facilis reprehenderit impedit tempore porro quibusdam esse!</p>
-                <div class="link-video">
+                <div class="align-items-center d-flex justify-content-center link-video">
                     <i class="fa-solid fa-play"></i>
-                    <a href="#">Ver Nuestro Reel</a>
+                    <a class="ms-4" href="#">Ver Nuestro Reel</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="newsletter">
-        <div class="newsletter_info">
-            <h2>Que esperas? Suscríbete a nuesto boletín y obtén un 25% de descuento</h2>
+    <section class="container-fluid newsletter">
+        <div class="container mt-5 col-10 col-lg-6 text-center align-items-center d-grid gap-2 newsletter_info wow animate__animated animate__headShake animate__delay-1s">
+            <h2 class="fw-bold">Que esperas? Suscríbete a nuesto boletín y obtén un 25% de descuento</h2>
             <p>Promoción con tiempo límite este mes. No requiere tarjeta de crédito.</p>
-            <div class="newsletter-action">
-                <input type="text" placeholder="Ingresa tu correo aquí">
-                <button href="#">Suscribirme</button>
+            <div class="d-flex text-center align-items-center justify-content-center newsletter-action">
+                <input class="p-1" type="text" placeholder="Ingresa tu correo">
+                <button class="ms-4" href="#">Suscribirme</button>
             </div>
         </div>
     </section>
-</body>
 <footer>
 
     <!-- ======================== Bar Section Start ======================== -->
-    <section class="bar">
-        <div class="bar-info">
-            <div class="bar_columns">
-                <span>
+    <section class="container-fluid bar">
+        <div class="container d-flex flex-column d-lg-row flex-lg-row col col-8 col-lg-12 align-items-center text-center bar-info">
+            <div class="container d-grid gap-2 bar_columns">
+                <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
                     <img src="images/global-icons/diet.png" alt="icon food">
-                    <h4>Productos Curados</h4>
+                    <h4 class="fw-bolder text-lg-start">Productos Curados</h4>
                 </span>
-                <div class="bar_columns-info">
+                <div class="text-lg-start bar_columns-info">
                     <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
                 </div>
             </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-                <span>
+            <div class="d-lg-inline-block line"></div>
+            <div class="container d-grid gap-2 bar_columns">
+                <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
                     <img src="images/global-icons/clean.png" alt="icon clean">
-                    <h4>Productos Curados</h4>
+                    <h4 class="fw-bolder text-lg-start">Higiene Profesional</h4>
                 </span>
-                <div class="bar_columns-info">
+                <div class="text-lg-start bar_columns-info">
                     <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
                 </div>
             </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-                <span>
+            <div class="d-lg-inline-block line"></div>
+            <div class="container d-grid gap-2 bar_columns">
+                <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
                     <img src="images/global-icons/green-tea.png" alt="icon green tea">
-                    <h4>Productos Curados</h4>
+                    <h4 class="fw-bolder text-lg-start">Comida Natural</h4>
                 </span>
-                <div class="bar_columns-info">
+                <div class="text-lg-start bar_columns-info">
                     <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
                 </div>
             </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-            <span>
+            <div class="d-lg-inline-block line"></div>
+            <div class="container d-grid gap-2 bar_columns">
+            <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
                 <img src="images/global-icons/happiness.png" alt="icon food">
-                <h4>Productos Curados</h4>
+                <h4 class="fw-bolder text-lg-start">Confianza al Cliente</h4>
             </span>
-                <div class="bar_columns-info">
+                <div class="text-lg-start bar_columns-info">
                     <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
                 </div>
             </div>
@@ -156,68 +174,94 @@
     <!-- ======================== Bar Section End ======================== -->
 
     <!-- ======================== Footer Section Start ======================== -->
-    <section class="footer">
-        <div class="footer_columns">
-            <div class="footer_columns-description">
-                <a href="index.html"><img src="images/Logo.png" alt="Logo Bistro"></a>
+    <section class="container-fluid footer">
+        <div class="container pb-5 col-10 col-lg-12 d-grid gap-4 d-lg-flex flex-lg-row align-items-start justify-content-around footer_columns">
+            <div class="text-center text-lg-start col-lg-4 footer_columns-description">
+                <a href="index.html"><img class="mb-4" src="images/Logo.png" alt="Logo Bistro"></a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate repudiandae doloremque soluta nihil eius unde, vel iste magnam dolorem.</p>
             </div>
-            <div class="footer_columns-item">
-                <h4>Link Páginas</h4>
+            <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                <h4 class="fw-bolder">Link Páginas</h4>
                 <a href="index.html">Inicio</a>
-                <a href="pages/acerca.html">Acerca de</a>
-                <a href="pages/menu.html">Menú</a>
-                <a href="pages/faqs.html">Faqs</a>
-                <a href="pages/contacto.html">Contacto</a>
+                <a href="./pages/acerca.html">Acerca de</a>
+                <a href="./pages/menu.html">Menú</a>
+                <a href="./pages/faqs.html">Faqs</a>
+                <a href="./pages/contacto.html">Contacto</a>
             </div>
-            <div class="footer_columns-item">
-                <h4>Links Útiles</h4>
+            <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                <h4 class="fw-bolder">Links Útiles</h4>
                 <a href="#">Términos y Condiciones</a>
                 <a href="#">Aviso de Privacidad</a>
                 <a href="#">Noticias Recientes</a>
             </div>
-            <div class="footer_columns-item">
-                <h4>Redes Sociales</h4>
-                <div class="social_icon">
+            <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                <h4 class="fw-bolder">Redes Sociales</h4>
+                <div class="d-flex align-items-start justify-content-center justify-content-lg-start social_icon">
                     <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="#"><i class="fs-2 fa-brands fa-facebook-square"></i></a>
                     </div>
-                    <div class="social-link">
-                       <a href="#">Veggiedén Unav</a> 
+                    <div class="ms-3 social-link">
+                        <a href="#">Veggiedén Unav</a> 
                     </div>
                 </div>
-                <div class="social_icon">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
                     <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+                        <a href="#"><i class="fs-2 fa-brands fa-youtube-square"></i></a>
                     </div>
-                    <div class="social-link">
+                    <div class="ms-3 social-link">
                         <a href="#">Veggiedén UNAV</a>
                     </div>
                 </div>
-                <div class="social_icon">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
                     <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fs-2 fa-brands fa-twitter-square"></i></a>
                     </div>
-                    <div class="social-link">
+                    <div class="ms-3 social-link">
                         <a href="#">@veggieden_unav</a>
                     </div>
                 </div>
-                <div class="social_icon">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
                     <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="#"><i class="fs-2 fa-brands fa-instagram-square"></i></a>
                     </div>
-                    <div class="social-link">
+                    <div class="ms-3 social-link">
                         <a href="#">Veggieden Unav</a>
                     </div>
                     
                 </div>
             </div>
         </div>
-        <div class="copyright">
+        <div class="container col-10 text-center pb-2 copyright">
             <p>©2022. Veggieden. Todos los Derechos Reservados.</p>
         </div>
     </section>
     <!-- ======================== Footer Section Start ======================== -->
 
 </footer>
+
+<!-- ======================== Script Bootstratp ======================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- <script type="text/javascript">
+    
+    window,addEventListener("scroll", function(){
+        var navafter = document.querySelector("nav");
+        navafter.classList.toggle("bg-light-after", window.scrollY > 100);
+    });
+
+</script> -->
+
+<!-- ======================== Script Bootstratp ======================== -->
+
+<!-- ======================= Script Wow ======================= -->
+
+<script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<!-- ======================= Script Wow ======================= -->
+
+</body>
 </html>

@@ -4,88 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto | Bistro</title>
 </head>
 <body>
 
-    <!-- =================== Header Section Start =================== -->
+    <!-- =================== Header Start =================== -->
 
-    <header class="topheader">
-        <nav class="topnav">
-            <a href="../index.html" class="logo">
-                <img src="../images/Logo.png" alt="Logo Bistro">
-            </a>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="acerca.html">Acerca de</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="faqs.html">Faqs</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
-            </ul>
-            <div class="open-menu">
-                <button  aria-label="Abrir menú">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                </button>
-            </div>
-            <!-- <button class="close-menu" aria-label="Cerrar menú">
-                <i class="fa-solid fa-xmark"></i>
-            </button> -->
-            <a href="#" class="nav-call"><button>+52 283 382 9284</button></a>
-        </nav>
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container d-flex justify-content-between">
+                    <a class="navbar-brand logo" href="../index.html"><img src="../images/Logo.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="container-fluid col-lg-8 navbar-nav gap-2 justify-content-end me-auto mb-2 mb-lg-0">
+                            <li class="nav-item text-center">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="acerca.html">Acerca de</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="faqs.html">Faqs</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <div class="nav-button text-center">
+                            <button class="nav-call">+52 283 382 9284</button>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+        </div>
     </header>
-    <!-- ======================= Header Section End ======================= -->
 
-    <section class="banner-top-contact">
-        <div class="banner-top_content">
-            <h1>Contáctanos</h1>
+    <!-- =================== Header End =================== -->
+
+    <!-- ======================= Hero Section Start ======================= -->
+
+    <section class="container-fluid banner-top-contact">
+        <div class="container d-flex col-10 text-center text-lg-start align-items-center banner-top_content">
+            <h1 class="fw-bold">Contáctanos <br>Ahora</h1>
         </div>
     </section>
 
      <!-- ======================= Section Content Start ======================= -->
 
      <section class="cards">
-        <div class="cards_container">
-            <div class="cards_container-content">
-                <img src="../images/icons/email.png" alt="icon">
-                <h4>Correo Electrónico</h4>
+        <div class="container text-center col-8 col-md-12 col-lg-10 d-grid d-lg-flex align-items-center justify-content-lg-around justify-content-md-between gap-4 cards_container">
+            <div class="d-flex flex-column justify-content-center align-items-center m-3 m-lg-2 p-lg-5 p-4 cards_container-content">
+                <img class="mb-3" src="../images/icons/email.png" alt="icon">
+                <h5 class="fw-bolder">Correo Electrónico</h5>
                 <p>info@webmail.com</p>
                 <p>jobs@webexample.com</p>
             </div>
-            <div class="cards_container-content">
-                <img src="../images/icons/phone.png" alt="icon">
-                <h4>Número de Teléfono</h4>
+            <div class="d-flex flex-column justify-content-center align-items-center m-3 m-lg-2 p-lg-5 p-4 cards_container-content">
+                <img class="mb-3" src="../images/icons/phone.png" alt="icon">
+                <h5 class="fw-bolder">Número de Teléfono</h5>
                 <p>+52 612-456-7432</p>
                 <p>+52 928-203-2894</p>
             </div>
-            <div class="cards_container-content">
-                <img src="../images/icons/gps.png" alt="icon">
-                <h4>Nuestra Ubicación</h4>
+            <div class="d-flex flex-column justify-content-center align-items-center m-3 m-lg-2 p-lg-5 p-4 cards_container-content">
+                <img class="mb-3" src="../images/icons/gps.png" alt="icon">
+                <h5 class="fw-bolder">Nuestra Ubicación</h5>
                 <p>Km 13, Navojoa-Huatampo</p>
                 <p>Sonora, México</p>
             </div>
         </div>
     </section>
     <section class="form-contact">
-        <div class="form-contact_content">
-            <div class="form-contact_container">
-                <h2>Alguna duda?</h2>
-                <form class="columns-form">
-                    <div class="form-contact_container-col1">
-                        <input type="text" placeholder="Nombre">
-                        <input type="email" placeholder="Email">
+        <div class="container align-items-center form-contact_content">
+            <div class="container col-10 col-md-8 col-lg-8 form-contact_container">
+                <h2 class="text-center mb-4 fw-bolder">Alguna duda?</h2>
+                <form class="container d-grid gap-3 align-items-center text-center columns-form">
+                    <div class="container d-flex gap-3 flex-column flex-lg-row col-lg-5 col-12 align-items-center  justify-content-center form-contact_container-col1">
+                        <input class="col-10 col-lg-12" type="text" placeholder="Nombre">
+                        <input class="col-10 col-lg-12" type="email" placeholder="Email">
                     </div>
-                        
-                    <div class="form-contact_container-col2">
-                        <input type="text" placeholder="Asunto">
-                        <input type="tel" placeholder="Teléfono">
+                    <div class="container d-flex gap-3 flex-column-reverse flex-lg-row col-lg-5 col-12 align-items-center justify-content-center form-contact_container-col2">
+                        <input class="col-10 col-lg-12" type="text" placeholder="Asunto">
+                        <input class="col-10 col-lg-12" type="tel" placeholder="Teléfono">
                     </div>
                     <div class="form-contact_container-message">
-                        <textarea name="" id="" cols="80" rows="10"></textarea>
+                        <textarea class="col-10" name="" id="" cols="51" rows="10"></textarea>
                     </div> 
                     <div class="form-contact_action">
                         <button href="#">Enviar</button>
@@ -99,127 +111,125 @@
     </section>
     <!-- ======================= Section Content End ======================= -->
 
-    <!-- ======================= Script Wow ======================= -->
+    <footer>
 
-    <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+        <!-- ======================== Bar Section Start ======================== -->
+        <section class="container-fluid bar">
+            <div class="container d-flex flex-column d-lg-row flex-lg-row col col-8 col-lg-12 align-items-center text-center bar-info">
+                <div class="container d-grid gap-2 bar_columns">
+                    <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
+                        <img src="../images/global-icons/diet.png" alt="icon food">
+                        <h4 class="fw-bolder text-lg-start">Productos Curados</h4>
+                    </span>
+                    <div class="text-lg-start bar_columns-info">
+                        <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
+                    </div>
+                </div>
+                <div class="d-lg-inline-block line"></div>
+                <div class="container d-grid gap-2 bar_columns">
+                    <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
+                        <img src="../images/global-icons/clean.png" alt="icon clean">
+                        <h4 class="fw-bolder text-lg-start">Higiene Profesional</h4>
+                    </span>
+                    <div class="text-lg-start bar_columns-info">
+                        <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
+                    </div>
+                </div>
+                <div class="d-lg-inline-block line"></div>
+                <div class="container d-grid gap-2 bar_columns">
+                    <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
+                        <img src="../images/global-icons/green-tea.png" alt="icon green tea">
+                        <h4 class="fw-bolder text-lg-start">Comida Natural</h4>
+                    </span>
+                    <div class="text-lg-start bar_columns-info">
+                        <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
+                    </div>
+                </div>
+                <div class="d-lg-inline-block line"></div>
+                <div class="container d-grid gap-2 bar_columns">
+                <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
+                    <img src="../images/global-icons/happiness.png" alt="icon food">
+                    <h4 class="fw-bolder text-lg-start">Confianza al Cliente</h4>
+                </span>
+                    <div class="text-lg-start bar_columns-info">
+                        <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================== Bar Section End ======================== -->
+    
+        <!-- ======================== Footer Section Start ======================== -->
+        <section class="container-fluid footer">
+            <div class="container pb-5 col-10 col-lg-12 d-grid gap-4 d-lg-flex flex-lg-row align-items-start justify-content-around footer_columns">
+                <div class="text-center text-lg-start col-lg-4 footer_columns-description">
+                    <a href="../index.html"><img class="mb-4" src="../images/Logo.png" alt="Logo Bistro"></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate repudiandae doloremque soluta nihil eius unde, vel iste magnam dolorem.</p>
+                </div>
+                <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                    <h4 class="fw-bolder">Link Páginas</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="acerca.html">Acerca de</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="faqs.html">Faqs</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                    <h4 class="fw-bolder">Links Útiles</h4>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Aviso de Privacidad</a>
+                    <a href="#">Noticias Recientes</a>
+                </div>
+                <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                    <h4 class="fw-bolder">Redes Sociales</h4>
+                    <div class="d-flex align-items-start justify-content-center justify-content-lg-start social_icon">
+                        <div class="social_icon-font">
+                            <a href="#"><i class="fs-2 fa-brands fa-facebook-square"></i></a>
+                        </div>
+                        <div class="ms-3 social-link">
+                            <a href="#">Veggiedén Unav</a> 
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
+                        <div class="social_icon-font">
+                            <a href="#"><i class="fs-2 fa-brands fa-youtube-square"></i></a>
+                        </div>
+                        <div class="ms-3 social-link">
+                            <a href="#">Veggiedén UNAV</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
+                        <div class="social_icon-font">
+                            <a href="#"><i class="fs-2 fa-brands fa-twitter-square"></i></a>
+                        </div>
+                        <div class="ms-3 social-link">
+                            <a href="#">@veggieden_unav</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
+                        <div class="social_icon-font">
+                            <a href="#"><i class="fs-2 fa-brands fa-instagram-square"></i></a>
+                        </div>
+                        <div class="ms-3 social-link">
+                            <a href="#">Veggieden Unav</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container col-10 text-center pb-2 copyright">
+                <p>©2022. Veggieden. Todos los Derechos Reservados.</p>
+            </div>
+        </section>
+        <!-- ======================== Footer Section Start ======================== -->
+    
+    </footer>
+    
+    <!-- ==================== Script Bootstrap ==================== -->
 
-    <!-- ======================= Script Wow ======================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- ==================== Script Boostratp ==================== -->
 
 </body>
-<footer>
-
-    <!-- ======================== Bar Section Start ======================== -->
-    <section class="bar">
-        <div class="bar-info">
-            <div class="bar_columns">
-                <span>
-                    <img src="../images/global-icons/diet.png" alt="icon food">
-                    <h4>Productos Curados</h4>
-                </span>
-                <div class="bar_columns-info">
-                    <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-                <span>
-                    <img src="../images/global-icons/clean.png" alt="icon clean">
-                    <h4>Productos Curados</h4>
-                </span>
-                <div class="bar_columns-info">
-                    <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-                <span>
-                    <img src="../images/global-icons/green-tea.png" alt="icon green tea">
-                    <h4>Productos Curados</h4>
-                </span>
-                <div class="bar_columns-info">
-                    <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-            <span>
-                <img src="../images/global-icons/happiness.png" alt="icon food">
-                <h4>Productos Curados</h4>
-            </span>
-                <div class="bar_columns-info">
-                    <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ======================== Bar Section End ======================== -->
-
-    <!-- ======================== Footer Section Start ======================== -->
-    <section class="footer">
-        <div class="footer_columns">
-            <div class="footer_columns-description">
-                <a href="../index.html"><img src="../images/Logo.png" alt="Logo Bistro"></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate repudiandae doloremque soluta nihil eius unde, vel iste magnam dolorem.</p>
-            </div>
-            <div class="footer_columns-item">
-                <h4>Link Páginas</h4>
-                <a href="../index.html">Inicio</a>
-                <a href="acerca.html">Acerca de</a>
-                <a href="menu.html">Menú</a>
-                <a href="faqs.html">Faqs</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-            <div class="footer_columns-item">
-                <h4>Links Útiles</h4>
-                <a href="#">Términos y Condiciones</a>
-                <a href="#">Aviso de Privacidad</a>
-                <a href="#">Noticias Recientes</a>
-            </div>
-            <div class="footer_columns-item">
-                <h4>Redes Sociales</h4>
-                <div class="social_icon">
-                    <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-                    </div>
-                    <div class="social-link">
-                       <a href="#">Veggiedén Unav</a> 
-                    </div>
-                </div>
-                <div class="social_icon">
-                    <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
-                    </div>
-                    <div class="social-link">
-                        <a href="#">Veggiedén UNAV</a>
-                    </div>
-                </div>
-                <div class="social_icon">
-                    <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                    </div>
-                    <div class="social-link">
-                        <a href="#">@veggieden_unav</a>
-                    </div>
-                </div>
-                <div class="social_icon">
-                    <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-                    </div>
-                    <div class="social-link">
-                        <a href="#">Veggieden Unav</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>©2022. Veggieden. Todos los Derechos Reservados.</p>
-        </div>
-    </section>
-    <!-- ======================== Footer Section Start ======================== -->
-
-</footer>
 </html>

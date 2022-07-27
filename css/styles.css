@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg_color: #FFF;
+    --first_color: #459E48;
+    --first_color-light: #4EB151;
+    --second_color: #fffaee;    
+    --text_color: #1C1C1C;
+    --text_color-inverse: #ffff;
+    --shadow_color: rgba(0, 0, 0, 0.10);
+    --soft_color: #2B2B2B;
+}
+
+* {
+    /* padding: 0; margin: 0; */
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition-duration: .2s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    transition: ease .40s;
+    padding-top: 40px;
+    overflow-x: hidden;
+}
+
+/* ============================================== NAVBAR CSS ============================================== */
+
+.nav-item {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background: url('../images/icons/menu-right.svg') no-repeat center center / cover;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav .nav-item .nav-link a {
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--first_color);
+    font-weight: 600;
+}
+
+.bg-light {
+    box-shadow: 0 4px 5px var(--shadow_color);
+    position: fixed;
+    background-color: var(--bg_color);
+    left: 0;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.nav-button button {
+    color: var(--text_color-inverse);
+    border-style: none;
+    background-color: var(--first_color);
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.nav-button button:hover {
+    background-color: var(--first_color-light);
+}
+
+
+/* ============================================== INDEX CSS ============================================== */
+
+
+/* =========== Hero Section Start =========== */
+
+.index-banner {
+    background: url(../images/index-page/hero-banner.jpeg) no-repeat;
+    position: relative;
+    width: 100%;
+    height: 91vh;
+    object-fit: cover;
+    background-position: center;
+}
+
+.site-title {
+    margin-top: 25%;
+    text-align: center;
+}
+
+.btn1 {
+    background-color: var(--first_color);
+    border: 2px solid var(--first_color);
+    padding: 0.5em 1em;
+    color: var(--text_color-inverse);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: var(--first_color-light);
+    border: 2px solid var(--first_color-light);
+}
+
+.btn2 {
+    background: transparent;
+    padding: 0.5em 1.5em;
+    color: var(--text_color);
+    border: 2px solid var(--first_color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    color: var(--bg_color);
+    background-color: var(--first_color);
+    border: 2px solid var(--first_color);
+}
+
+@media (min-width: 1024px) {
+
+    .index-banner {
+        height: 100vh;
+    }
+
+    .site-title {
+        margin: 12% 5%;
+        text-align: left;
+    }
+
+    .btn1 {
+        padding: 0.7em 1em;
+    }
+    
+    .btn2 {
+        padding: 0.7em 1.5em;
+    }
+}
+
+/* =========== Hero Section End =========== */
+
+/* =========== Datos Section Start =========== */
+
+.datos {
+    background-color: var(--first_color);
+    color: var(--text_color-inverse);
+    height: 18vh;
+}
+
+/* =========== Info Section Start =========== */
+
+.info-index {
+    background-color: var(--second_color);
+}
+
+.info-index-content {
+    padding: 12% 0;
+}
+
+.info-index-content .info-index_image img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.info-index_container-content button {
+    background-color: var(--first_color);
+    color: var(--text_color-inverse);
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+.info-index_container-content button:hover {
+    background-color: var(--first_color-light);
+}
+
+@media (min-width: 1024px) {
+    
+    .info-index-content {
+        padding: 5% 0;
+        max-width: 950px;
+    }
+    
+    .info-index-content .info-index_image img {
+        width: 100%;
+        max-width: 900px;
+    }
+    
+    .info-index_container-content {
+        margin-left: 50px;
+    }
+}
+
+/* =========== Info Section End =========== */
+
+/* =========== Video Section Start =========== */
+
+.video-banner {
+    position: relative;
+    width: auto;
+    /* height: 350px; */
+    background: url(../images/index-page/video-bg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.link-video,
+.link-video a {
+    text-decoration: none;
+    color: var(--text_color);
+}
+.link-video:hover,
+.link-video a:hover {
+    color: var(--first_color);
+}
+
+.fa-play {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* =========== Video Section End =========== */
+
+/* =========== Newsletter Section Start =========== */
+
+.newsletter {
+    padding-top: 3%;
+}
+
+.newsletter-action input {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.newsletter-action button {
+    background-color: var(--first_color);
+    color: var(--text_color-inverse);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.newsletter-action button:hover {
+    background-color: var(--first_color-light);
+}
+
+@media (min-width: 1024px) {
+    
+    .newsletter {
+        padding-top: 3%;
+    }
+}
+
+/* =========== Newsletter Section End =========== */
+
+/* ============================================== ABOUT CSS ============================================== */
+
+/* =========== Banner Top Section Start =========== */
+
+.banner-top-about {
+    height: 60vh;
+    background: url(../images/about-page/about.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-top_content {
+    color: var(--text_color-inverse);
+    padding: 60% 0;
+}
+
+.banner-top_content h1 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+    .banner-top-about {
+        height: 70vh;
+    }
+
+    .banner-top_content {
+        padding: 20% 0;
+    }
+
+    .banner-top_content h1 {
+        font-size: 3rem;
+    }
+}
+
+/* =========== Banner Top Section End =========== */
+
+/* =========== About Section Start =========== */
+
+.about-info_img img {
+    height: 100%;
+    max-height: 230px;
+}
+.about-info_img img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.about-info_container h6 {
+    color: var(--first_color);
+}
+
+.about-info_container-modifier {
+    border-left: 5px solid var(--first_color);
+    padding-left: 25px;
+}
+
+@media (min-width: 1024px) {
+    .about-info_img img {
+        height: 100%;
+        max-height: 400px;
+    }
+}
+
+/* =========== About Section End =========== */
+
+/* =========== Why Section Start =========== */
+
+.why {
+    background-color: var(--second_color);
+    padding: 10% 0;
+}
+
+.why_cards-contain {
+    background-color: var(--bg_color);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.why_cards-content img {
+    width: 100%;
+    max-width: 40px;
+}
+
+@media (min-width: 1024px) {
+    .why {
+        padding: 5% 0;
+    }
+}
+
+/* =========== Why Section End =========== */
+
+/* =========== Team Section Start =========== */
+
+.team {
+    padding: 10% 0;
+}
+
+.team_container {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.team_container:hover {
+    transform: scale(1.1);
+}
+
+.team_container-img img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.team_container-social a {
+    color: var(--first_color);
+}
+
+@media (min-width: 1024px) {
+    .team {
+        padding: 5% 0;
+    }
+}
+
+/* =========== Team Section End =========== */
+
+/* ============================================== MENU CSS ============================================== */
+
+/* =========== Hero Banner Section Start =========== */
+
+.banner-top-menu {
+    width: 100%;
+    height: 60vh;
+    background: url(../images/menu-page/menu.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1024px) {
+    .banner-top-menu {
+        height: 70vh;
+    }
+}
+
+/* =========== Hero Banner Section End =========== */
+
+/* =========== Info Menu Section Start =========== */
+
+.info-menu {
+    padding: 10% 0;
+}
+
+.info-menu_content h6 {
+    color: var(--first_color);
+}
+
+.info-menu-container img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.info-menu_list .fa-check {
+    color: var(--first_color);
+    font-size: 1.5rem;
+}
+
+.info-menu_btn button {
+    background-color: var(--first_color);
+    color: var(--text_color-inverse);
+    border-radius: 5px;
+    padding: .7em 1.5em;
+    border: none;
+}
+.info-menu_btn button:hover {
+    background-color: var(--first_color-light);
+}
+
+@media (min-width: 1024px) {
+    .info-menu {
+        padding: 2% 0;
+    }
+
+    .info-menu-container img {
+        max-width: 950px;
+    }
+}
+
+/* =========== Info Menu Section End =========== */
+
+/* =========== Menu Section Start =========== */
+
+.menu_bistro {
+    background-color: var(--second_color);
+    padding: 10% 0;
+}
+
+.title-menu a {
+    text-decoration: underline;
+}
+
+.menu-list {
+    position: relative;
+    z-index: 10;
+}
+
+/* =========== Images Start =========== */
+
+.huevos-img {
+    position: absolute;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 200px;
+    margin-top: -10%;
+    right: -20%;
+    z-index: 1;
+}
+
+.tomates-img {
+    position: absolute;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    left: -25%;
+    padding-top: 40%;
+    width: 100%;
+    max-width: 220px;
+    z-index: 1;
+}
+
+.chilaquiles-img {
+    position: absolute;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 140%;
+    right: -20%;
+    z-index: 1;
+}
+
+.chiles-img {
+    position: absolute;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 80px;
+    margin-top: 220%;
+    left: 1%;
+    z-index: 1;
+}
+
+.quesadillas-img {
+    position: absolute;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 345%;
+    right: -20%;
+    z-index: 1;
+}
+
+/* =========== Images Start =========== */
+
+.menu-precio {
+    align-items: flex-end;
+}
+
+.menu-precio h4 {
+    color: var(--first_color);
+}
+
+.menu-precio span {
+    font-weight: 600;
+}
+
+.menu-comida p {
+    color: #3b3b3b;
+}
+
+.menu-comida p .bolder {
+    font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+
+    .menu_bistro {
+        padding: 5% 0;
+    }
+
+    .menu-comida p {
+        max-width: 80%;
+    }
+
+    /* =========== Images Start =========== */
+
+    .huevos-img {
+        max-width: 350px;
+        margin-top: -10%;
+        right: -10%;
+    }
+
+    .tomates-img {
+        left: -10%;
+        padding-top: 15%;
+        max-width: 350px;
+    }
+
+    .chilaquiles-img {
+        max-width: 300px;
+        margin-top: 46%;
+        right: -5%;
+    }
+
+    .chiles-img {
+        max-width: 200px;
+        margin-top: 65%;
+        left: -2%;
+    }
+
+    .quesadillas-img {
+        max-width: 340px;
+        margin-top: 80%;
+        right: -8%;
+    }
+
+    /* =========== Images Start =========== */
+}
+
+
+/* =========== Menu Section End =========== */
+
+/* ============================================== FAQS CSS ============================================== */
+
+/* =========== Banner Top Section Start =========== */
+
+.banner-top-faqs {
+    height: 60vh;
+    background: url(../images/faqs-page/faqs.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1024px) {
+    .banner-top-faqs {
+        height: 70vh;
+    }
+}
+
+/* =========== Banner Top Section End =========== */
+
+/* =========== Info Faqs Section Start =========== */
+
+.info-faqs {
+    padding: 10% 0;
+}
+
+.info-faqs-image img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.info-faqs_btn button {
+    background-color: var(--first_color);
+    color: var(--text_color-inverse);
+    border-radius: 5px;
+    padding: .7em 1.5em;
+    border: none;
+}
+.info-faqs_btn button:hover {
+    background-color: var(--first_color-light);
+}
+
+@media (min-width: 1024px) {
+
+    .info-faqs {
+        padding: 5% 0;
+    }
+
+    .info-faqs-image img {
+        max-width: 500px;
+    }
+}
+
+/* =========== Info Faqs Section End =========== */
+
+/* =========== Faqs Section Start =========== */
+
+.faqs-section {
+    background-color: var(--second_color);
+    padding: 10% 0;
+}
+
+.question-container .bolder {
+    font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+    
+    .faqs-section {
+        padding: 5% 0;
+    }
+
+    .question-container p {
+        max-width: 450px;
+    }
+}
+
+/* =========== Faqs Section End =========== */
+
+/* =========== Bread Banner Section Start =========== */
+
+.banner-bread {
+    width: 100%;
+    height: 35vh;
+    background: url(../images/faqs-page/bread.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-bread_contain {
+    color: var(--text_color-inverse);
+}
+
+.banner-bread_btn button {
+    background-color: var(--first_color);
+    color: var(--text_color-inverse);
+    padding: .7em 1.5em;
+    border-radius: 5px;
+    border: none;
+}
+.banner-bread_btn button:hover {
+    background-color: var(--first_color-light);
+}
+
+/* =========== Bread Banner Section End =========== */
+
+/* ============================================== CONTACT CSS ============================================== */
+
+/* =========== Banner Top Section Start =========== */
+
+.banner-top-contact {
+    width: 100%;
+    height: 60vh;
+    background: url(../images/contact-page/contact.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1024px) {
+    
+    .banner-top-contact {
+        height: 70vh;
+    }
+}
+
+/* =========== Banner Top Section End =========== */
+
+/* =========== Card Section Start =========== */
+
+.cards_container {
+    padding: 10% 0;
+}
+
+.cards_container-content {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.1);
+}
+.cards_container-content:hover {
+    transform: scale(1.1);
+}
+
+.cards_container-content img {
+    width: 100%;
+    max-width: 50px;
+}
+
+@media (min-width: 1024px) {
+    .cards_container {
+        padding: 5% 0;
+    }
+}
+
+/* =========== Card Section End =========== */
+
+/* =========== Form Section Start =========== */
+
+.form-contact_content {
+    padding: 10% 0;
+}
+
+.form-contact_container {
+    padding: 10% 0;
+    border: .5px solid lightgrey;
+    background-color: var(--bg_color);
+    border-radius: 5px;
+}
+
+.form-contact_container-col1 input,
+.form-contact_container-col2 input {
+    padding: .7em 1.5em;
+}
+
+.columns-form button {
+    border-radius: 5px;
+    color: var(--text_color-inverse);
+    background-color: var(--first_color);
+    padding: .7em 2.5em;
+    border: none;
+    cursor: pointer;
+}
+.columns-form button:hover {
+    background-color: var(--first_color-light);
+}
+
+.form-contact_map {
+    position: relative;
+    z-index: -100;
+    transform: translateY(-300px);
+    margin-bottom: -50%;
+}
+
+@media (min-width: 1024px) {
+    
+    .form-contact_content {
+        padding: 5% 0;
+    }
+
+    .form-contact_container {
+        padding: 5% 0;
+    }
+    
+    .form-contact_map {
+        position: relative;
+        z-index: -100;
+        transform: translateY(-300px);
+        margin-bottom: -15%;
+    }
+}
+
+/* ============================================== FOOTER CSS ============================================== */
+
+
+/* =========== Footer 1° Section Start =========== */
+
+.bar {
+    background-image: linear-gradient(180deg, var(--bg_color) 50%, var(--second_color) 50%);
+    padding: 15% 0;
+}
+
+.bar-info {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--bg_color);
+    border-radius: 5px;
+}
+
+.bar_columns {
+    padding: 5% 10%;
+}
+
+.bar_columns img {
+    width: 60px;
+    height: 60px;
+}
+
+.line {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    
+    .bar {
+        padding: 5% 0;
+        /* padding-bottom: 5%; */
+    }
+    
+    .bar_columns {
+        padding: 2% 3%;
+    }
+    
+    .bar_columns img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .line {
+        border: 1px solid var(--text_color);
+        height: 15vh;
+    }
+}
+
+/* =========== Footer 1° Section End =========== */
+
+/* =========== Footer 2° Section Start =========== */
+
+.footer {
+    background-color: var(--second_color);
+}
+
+.footer_columns-description img {
+    width: 100%;
+    max-width: 180px;
+}
+
+.footer_columns-item a {
+    text-decoration: none;
+    color: var(--text_color);
+}
+
+/* =========== Footer 2° Section End =========== */

@@ -4,215 +4,353 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Menu | Bistro</title>
 </head>
 <body>
 
     <!-- =================== Header Start =================== -->
 
-    <header class="topheader">
-        <nav class="topnav">
-            <a href="../index.html" class="logo">
-                <img src="../images/Logo.png" alt="Logo Bistro">
-            </a>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="acerca.html">Acerca de</a></li>
-                <li><a href="menu.html" class="active">Menu</a></li>
-                <li><a href="faqs.html">Faqs</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="open-menu">
-                <button  aria-label="Abrir menú">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                </button>
-            </div>
-            <!-- <button class="close-menu" aria-label="Cerrar menú">
-                <i class="fa-solid fa-xmark"></i>
-            </button> -->
-            <a href="#" class="nav-call"><button>+52 283 382 9284</button></a>
-        </nav>
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container d-flex justify-content-between">
+                    <a class="navbar-brand logo" href="../index.html"><img src="../images/Logo.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="container-fluid col-lg-8 navbar-nav gap-2 justify-content-end me-auto mb-2 mb-lg-0">
+                            <li class="nav-item text-center">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="acerca.html">Acerca de</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link active" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="faqs.html">Faqs</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <div class="nav-button text-center">
+                            <button class="nav-call">+52 283 382 9284</button>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+        </div>
     </header>
-    <!-- ======================= Header Section End ======================= -->
-    <section class="banner-top-menu">
-        <div class="banner-top_content">
-            <h1>Conoce el<br>Menú</h1>
+
+    <!-- =================== Header End =================== -->
+
+    <!-- ======================= Hero Section Start ======================= -->
+
+    <section class="container-fluid banner-top-menu">
+        <div class="container d-flex col-10 text-center text-lg-start align-items-center banner-top_content">
+            <h1 class="fw-bold">Conoce el<br>Menú</h1>
         </div>
     </section>
     <section class="info-menu">
-        <div class="info-menu-container">
-            <div class="info-menu_content">
-                <h5>Un cuerpo sano, una mente sana</h5>
-                <h2>Hacemos todo a mano con los mejores ingredientes sanos</h2>
+        <div class="container col-10 col-lg-10 d-grid gap-3 d-lg-flex align-items-center justify-content-around text-center text-lg-start info-menu-container">
+            <div class="d-grid gap-4 info-menu_content">
+                <h6>// Un cuerpo sano, una mente sana</h6>
+                <h1 class="fw-bolder">Hacemos todo a mano con los mejores ingredientes sanos</h1>
                 <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quaerat quam voluptatibus magnam deleniti non sed ducimus.</a>
-                <div class="info-menu_list">
-                    <div class="info-menu_list-item">
-                       <i class="fa-solid fa-check"></i><h3>Etiam sed dolor ac diam volupat</h3> 
+                <div class="d-grid gap-2 align-items-center justify-content-center justify-content-lg-start text-lg-start info-menu_list">
+                    <div class="d-flex justify-content-lg-start align-items-center justify-content-center info-menu_list-item">
+                       <i class="fs-2 fa-solid fa-check"></i><p class="ms-3 mb-0">Etiam sed dolor ac diam volupat</p> 
                     </div>
-                    <div class="info-menu_list-item">
-                        <i class="fa-solid fa-check"></i><h3>Erat volutpat aliquet imperdiet</h3> 
+                    <div class="d-flex justify-content-lg-start align-items-center justify-content-center info-menu_list-item">
+                        <i class="fs-2 fa-solid fa-check"></i><p class="ms-3 mb-0">Erat volutpat aliquet imperdiet</p> 
                     </div>
-                    <div class="info-menu_list-item">
-                       <i class="fa-solid fa-check"></i><h3>Purus a radio finibus bidendum</h3> 
+                    <div class="d-flex justify-content-lg-start align-items-center justify-content-center info-menu_list-item">
+                       <i class="fs-2 fa-solid fa-check"></i><p class="ms-3 mb-0">Purus a radio finibus bidendum</p> 
                     </div>
                 </div>
                 <div class="info-menu_btn">
                     <button href="#">Saber Más</button>
                 </div>
             </div>
-            <img src="../images/menu-page/menu-info.png" alt="Menu Bistro">
+            <div class="info-menu-container_image">
+                <img src="../images/menu-page/menu-info.png" alt="Menu Bistro">
+            </div>
         </div>
     </section>
 
-    <section class="menu_bistro">
-        <div class="title-menu">
-            <h2>Nuestro Menú</h2>
-            <a>Desayunos</a>
+    <section class="container-fluid d-grid gap-5 menu_bistro">
+        <div class="container d-grid gap-3 text-center title-menu">
+            <h2 class="fw-bolder display-6">Nuestro Menú</h2>
+            <a class="fw-bolder fs-5 text-muted">Desayunos</a>
         </div>
-        <img src="../images/menu-page/pizza.png" class="pizza-img wow animate__animated animate__fadeInUpBig animate__delay-2s" alt="Pizza Bistro">
-        <img src="../images/menu-page/mollete.png" class="mollete-img wow animate__animated animate__slideInRight animate__delay-1s" alt="Molletes Bistro">
-        <img src="../images/menu-page/food/ENSALADA.png" class="ensalada-img wow animate__animated animate__fadeInUpBig animate__delay-2s" alt="Molletes Bistro">
-        <img src="../images/menu-page/spaghetti.png" class="spaguetti-img wow animate__animated animate__slideInRight animate__delay-1s" alt="Spaguetti Bistro">
-        <div class="menu-list">
+        <img src="../images/menu-page/food/TOMATE.png" class="tomates-img wow animate__animated animate__fadeInUpBig animate__delay-1s" alt="Tomates Bistro">
+        <img src="../images/menu-page/food/HUEVOS.png" class="huevos-img wow animate__animated animate__slideInRight animate__delay-.5s" alt="Huevos Rancheros Bistro">
+        <img src="../images/menu-page/food/CHILAQUILES.png" class="chilaquiles-img wow animate__animated animate__slideInRight animate__delay-.5s" alt="Chilaquiles Bistro">
+        <img src="../images/menu-page/food/CHILE.png" class="chiles-img wow animate__animated animate__fadeInUpBig animate__delay-.5s" alt="Chiles Bistro">
+        <img src="../images/menu-page/food/QUESADILLAS.png" class="quesadillas-img wow animate__animated animate__fadeInUp animate__delay-1s" alt="Quesadillas Bistro">
+
+        <div class="container d-flex gap-4 flex-column flex-lg-row align-items-center align-items-lg-start justify-content-center justify-content-lg-evenly justify-content-md-between col-10 col-md-12 col-lg-10 menu-list">
 
         <!-- ================= First Column Start ================= -->
 
-        <div class="menu-column1">
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Huevos al gusto</h3>
-                    <span class="menu_precio-comida">$ 45</span>
+            <div class="d-grid gap-4 text-center col-lg-5 menu-column1">
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Huevos al gusto</h4>
+                        <span class="display-6 menu_precio-comida">$ 45</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p>2 Huevos revueltos o tofu.<br>Bologna <span class="bolder">(485 kcal)</span>, chorizo <span class="bolder">(495kcal)</span>, a la Mexicana <span class="bolder">(396 kcal)</span> guarnición de frijol y queso cotija.</p>
+                    </div>
                 </div>
-                <div class="menu-comida">
-                    <p>2 Huevos revueltos o tofu.<br>Bologna <strong>(485 kcal)</strong>, chorizo <strong>(495kcal)</strong>, a la Mexicana <strong>(396 kcal)</strong> guarnición de frijol y queso cotija.</p>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Huevos C/ Milanesa</h4>
+                        <span class="display-6 menu_precio-comida">$ 60</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(686 kcal)</strong> 2 Huevos revueltos o estrellados. Guarnición de frijol con queso cotija.</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Huevos Rancheros</h4>
+                        <span class="display-6 menu_precio-comida">$ 50</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p>Revueltos o estrellados,<strong> (572 kcal)</strong>, 2 huevos montados o tofu sobre tostadas doradas bañadas de salsa ranchera con guarnición de frijol con queso cotija.</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Omelette al Gusto</h4>
+                        <span class="display-6 menu_precio-comida">$ 55</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(725 kcal)</strong> A elegir 3 ingredientes:<br>
+                            Champiñon, bologna, chorizo, salchicha, tocino, chile poblano, pimiento, tomate y cebolla. Con queso tipo Menonita. Con guarnición de frijol maneado con queso cotija.</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Nopales C/ Verdura</h4>
+                        <span class="display-6 menu_precio-comida">$ 40</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(384 kcal)</strong> Nopales con chile, tomate y cebolla. Guarnición de frijol y queso cotija. Con queso fresco a la plancha.</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Molletes</h4>
+                        <span class="display-6 menu_precio-comida">$ 40</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(615 kcal)</strong> 2 piezas de pan integral partida en dos, semidorados, untados de frijol maneado con queso menonita gratinado, y pico de gallo o ensalada.</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Quesadillas <br>a la Mexicana</h4>
+                        <span class="display-6 menu_precio-comida">$ 40</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(740 kcal)</strong> Tortillas integrales, rellenas de queso tipo Menonita, con salsa pico de gallo, crema ácida y frijol maneado con queso cotija.</p>
+                    </div>
                 </div>
             </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Huevos C/ Milanesa</h3>
-                    <span class="menu_precio-comida">$ 60</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(686 kcal)</strong> 2 Huevos revueltos o estrellados. Guarnición de frijol con queso cotija.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Huevos Rancheros</h3>
-                    <span class="menu_precio-comida">$ 50</span>
-                </div>
-                <div class="menu-comida">
-                    <p>Revueltos o estrellados,<strong> (572 kcal)</strong>, 2 huevos montados o tofu sobre tostadas doradas bañadas de salsa ranchera con guarnición de frijol con queso cotija.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Omelette al Gusto</h3>
-                    <span class="menu_precio-comida">$ 55</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(725 kcal)</strong> A elegir 3 ingredientes:<br>
-                        Champiñon, bologna, chorizo, salchicha, tocino, chile poblano, pimiento, tomate y cebolla. Con queso tipo Menonita. Con guarnición de frijol maneado con queso cotija.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Nopales C/ Verdura</h3>
-                    <span class="menu_precio-comida">$ 40</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(384 kcal)</strong> Nopales con chile, tomate y cebolla. Guarnición de frijol y queso cotija. Con queso fresco a la plancha.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Molletes</h3>
-                    <span class="menu_precio-comida">$ 40</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(615 kcal)</strong> 2 piezas de pan integral partida en dos, semidorados, untados de frijol maneado con queso menonita gratinado, y pico de gallo o ensalada.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Quesadillas a la Mexicana</h3>
-                    <span class="menu_precio-comida">$ 40</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(740 kcal)</strong> Tortillas integrales, rellenas de queso tipo Menonita, con salsa pico de gallo, crema ácida y frijol maneado con queso cotija.</p>
-                </div>
-            </div>
-        </div>
         
         <!-- ================= Second Column Start ================= -->
 
-        <div class="menu-column2">
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Burritos de Frijol con queso</h3>
-                    <span class="menu_precio-comida">$ 80</span>
+            <div class="d-grid gap-4 text-center col-lg-5 menu-column2">
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Burritos de Frijol</h4>
+                        <span class="display-6 menu_precio-comida">$ 80</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(155 kcal)</strong> Tortilla de harina con frijol maneado y queso tipo Menonita gratinado.</p>
+                    </div>
                 </div>
-                <div class="menu-comida">
-                    <p><strong>(155 kcal)</strong> Tortilla de harina con frijol maneado y queso tipo Menonita gratinado.</p>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Sandwich</h4>
+                        <span class="display-6 menu_precio-comida">$ 20</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(394 kcal)</strong> Dos laminas de pan integral, untadas de mayonesa y relleno de bologna, queso, tomate, aguacate, cebolla y lechuga. Con sus respectivos complementos (catsup, mostaza, chiles en vinagre).</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Torta de Huevo</h4>
+                        <span class="display-6 menu_precio-comida">$ 35</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(620 kcal)</strong> Pan de telera untada de mayonesa y frijol, huevos estrellados, cebolla, cilantro, lechuga, aguacate y tomate.</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Chilaquiles Rojos <br>o Verdes</h4>
+                        <span class="display-6 menu_precio-comida">$ 45</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(650 kcal)</strong> Totopos naturales, bañados con salsa roja o verde, con queso fresco, crema ácida, cebolla morada y cilantro.<br> Opción vegana. Guarnición de frijol maneado con queso cotija.</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Tamales Gratinados <br>con salsa Poblana</h4>
+                        <span class="display-6 menu_precio-comida">$ 75</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(1,259 kcal)</strong> 2 Piezas de tamales de elote gratinados con queso menonita, bañados en salsa poblana acompañados de frijol maneado con queso cotija y ensalada.</p>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 menu-item">
+                    <div class="d-flex align-text-bottom justify-content-lg-between justify-content-around menu-precio">
+                        <h4 class="fw-bolder mb-0 text-start">Enfrijoladas</h4>
+                        <span class="display-6 menu_precio-comida">$ 50</span>
+                    </div>
+                    <div class="text-lg-start menu-comida">
+                        <p><strong>(752 kcal)</strong> 4 piezas de tortillas de maíz rellenas de queso fresco o tofu, bañados de frijol maneado ligero, con media crema, cebolla morada, cilantro y aguacate, acompañadas de ensalada.</p>
+                    </div>
                 </div>
             </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Sandwich</h3>
-                    <span class="menu_precio-comida">$ 20</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(394 kcal)</strong> Dos laminas de pan integral, untadas de mayonesa y relleno de bologna, queso, tomate, aguacate, cebolla y lechuga. Con sus respectivos complementos (catsup, mostaza, chiles en vinagre).</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Torta de Huevo</h3>
-                    <span class="menu_precio-comida">$ 35</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(620 kcal)</strong> Pan de telera untada de mayonesa y frijol, huevos estrellados, cebolla, cilantro, lechuga, aguacate y tomate.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Chilaquiles Rojos o Verdes</h3>
-                    <span class="menu_precio-comida">$ 45</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(650 kcal)</strong> Totopos naturales, bañados con salsa roja o verde, con queso fresco, crema ácida, cebolla morada y cilantro.<br> Opción vegana. Guarnición de frijol maneado con queso cotija.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Tamales Gratinados con salsa Poblana</h3>
-                    <span class="menu_precio-comida">$ 75</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(1,259 kcal)</strong> 2 Piezas de tamales de elote gratinados con queso menonita, bañados en salsa poblana acompañados de frijol maneado con queso cotija y ensalada.</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="menu-precio">
-                    <h3>Enfrijoladas</h3>
-                    <span class="menu_precio-comida">$ 50</span>
-                </div>
-                <div class="menu-comida">
-                    <p><strong>(752 kcal)</strong> 4 piezas de tortillas de maíz rellenas de queso fresco o tofu, bañados de frijol maneado ligero, con media crema, cebolla morada, cilantro y aguacate, acompañadas de ensalada.</p>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     <section class="video-menu">
 
     </section>
     <!-- ======================= Section Content End ======================= -->
+
+    <footer>
+
+        <!-- ======================== Bar Section Start ======================== -->
+        <section class="container-fluid bar">
+            <div class="container d-flex flex-column d-lg-row flex-lg-row col col-8 col-lg-12 align-items-center text-center bar-info">
+                <div class="container d-grid gap-2 bar_columns">
+                    <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
+                        <img src="../images/global-icons/diet.png" alt="icon food">
+                        <h4 class="fw-bolder text-lg-start">Productos Curados</h4>
+                    </span>
+                    <div class="text-lg-start bar_columns-info">
+                        <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
+                    </div>
+                </div>
+                <div class="d-lg-inline-block line"></div>
+                <div class="container d-grid gap-2 bar_columns">
+                    <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
+                        <img src="../images/global-icons/clean.png" alt="icon clean">
+                        <h4 class="fw-bolder text-lg-start">Higiene Profesional</h4>
+                    </span>
+                    <div class="text-lg-start bar_columns-info">
+                        <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
+                    </div>
+                </div>
+                <div class="d-lg-inline-block line"></div>
+                <div class="container d-grid gap-2 bar_columns">
+                    <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
+                        <img src="../images/global-icons/green-tea.png" alt="icon green tea">
+                        <h4 class="fw-bolder text-lg-start">Comida Natural</h4>
+                    </span>
+                    <div class="text-lg-start bar_columns-info">
+                        <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
+                    </div>
+                </div>
+                <div class="d-lg-inline-block line"></div>
+                <div class="container d-grid gap-2 bar_columns">
+                <span class="d-lg-flex flex-lg-row gap-4 d-flex flex-column align-items-center">
+                    <img src="../images/global-icons/happiness.png" alt="icon food">
+                    <h4 class="fw-bolder text-lg-start">Confianza al Cliente</h4>
+                </span>
+                    <div class="text-lg-start bar_columns-info">
+                        <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ======================== Bar Section End ======================== -->
+    
+        <!-- ======================== Footer Section Start ======================== -->
+        <section class="container-fluid footer">
+            <div class="container pb-5 col-10 col-lg-12 d-grid gap-4 d-lg-flex flex-lg-row align-items-start justify-content-around footer_columns">
+                <div class="text-center text-lg-start col-lg-4 footer_columns-description">
+                    <a href="../index.html"><img class="mb-4" src="../images/Logo.png" alt="Logo Bistro"></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate repudiandae doloremque soluta nihil eius unde, vel iste magnam dolorem.</p>
+                </div>
+                <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                    <h4 class="fw-bolder">Link Páginas</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="acerca.html">Acerca de</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="faqs.html">Faqs</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                    <h4 class="fw-bolder">Links Útiles</h4>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Aviso de Privacidad</a>
+                    <a href="#">Noticias Recientes</a>
+                </div>
+                <div class="d-grid gap-2 text-center text-lg-start  footer_columns-item">
+                    <h4 class="fw-bolder">Redes Sociales</h4>
+                    <div class="d-flex align-items-start justify-content-center justify-content-lg-start social_icon">
+                        <div class="social_icon-font">
+                            <a href="#"><i class="fs-2 fa-brands fa-facebook-square"></i></a>
+                        </div>
+                        <div class="ms-3 social-link">
+                            <a href="#">Veggiedén Unav</a> 
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
+                        <div class="social_icon-font">
+                            <a href="#"><i class="fs-2 fa-brands fa-youtube-square"></i></a>
+                        </div>
+                        <div class="ms-3 social-link">
+                            <a href="#">Veggiedén UNAV</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
+                        <div class="social_icon-font">
+                            <a href="#"><i class="fs-2 fa-brands fa-twitter-square"></i></a>
+                        </div>
+                        <div class="ms-3 social-link">
+                            <a href="#">@veggieden_unav</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start social_icon">
+                        <div class="social_icon-font">
+                            <a href="#"><i class="fs-2 fa-brands fa-instagram-square"></i></a>
+                        </div>
+                        <div class="ms-3 social-link">
+                            <a href="#">Veggieden Unav</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container col-10 text-center pb-2 copyright">
+                <p>©2022. Veggieden. Todos los Derechos Reservados.</p>
+            </div>
+        </section>
+        <!-- ======================== Footer Section Start ======================== -->
+    
+    </footer>
+
+     <!-- ==================== Script Bootstrap ==================== -->
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+     <!-- ==================== Script Boostratp ==================== -->
 
     <!-- ======================= Script Wow ======================= -->
 
@@ -224,117 +362,4 @@
     <!-- ======================= Script Wow ======================= -->
 
 </body>
-<footer>
-
-    <!-- ======================== Bar Section Start ======================== -->
-    <section class="bar">
-        <div class="bar-info">
-            <div class="bar_columns">
-                <span>
-                    <img src="../images/global-icons/diet.png" alt="icon food">
-                    <h4>Productos Curados</h4>
-                </span>
-                <div class="bar_columns-info">
-                    <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-                <span>
-                    <img src="../images/global-icons/clean.png" alt="icon clean">
-                    <h4>Productos Curados</h4>
-                </span>
-                <div class="bar_columns-info">
-                    <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-                <span>
-                    <img src="../images/global-icons/green-tea.png" alt="icon green tea">
-                    <h4>Productos Curados</h4>
-                </span>
-                <div class="bar_columns-info">
-                    <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
-                </div>
-            </div>
-            <div class="line"></div>
-            <div class="bar_columns">
-            <span>
-                <img src="../images/global-icons/happiness.png" alt="icon food">
-                <h4>Productos Curados</h4>
-            </span>
-                <div class="bar_columns-info">
-                    <p>Proporcionamos productos curados para todos nuestos clientes 100% garantizados</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ======================== Bar Section End ======================== -->
-
-    <!-- ======================== Footer Section Start ======================== -->
-    <section class="footer">
-        <div class="footer_columns">
-            <div class="footer_columns-description">
-                <a href="#"><img src="../images/Logo.png" alt="Logo Bistro"></a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cupiditate repudiandae doloremque soluta nihil eius unde, vel iste magnam dolorem.</p>
-            </div>
-            <div class="footer_columns-item">
-                <h4>Link Páginas</h4>
-                <a href="../index.html">Inicio</a>
-                <a href="acerca.html">Acerca de</a>
-                <a href="menu.html">Menú</a>
-                <a href="faqs.html">Faqs</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-            <div class="footer_columns-item">
-                <h4>Links Útiles</h4>
-                <a href="#">Términos y Condiciones</a>
-                <a href="#">Aviso de Privacidad</a>
-                <a href="#">Noticias Recientes</a>
-            </div>
-            <div class="footer_columns-item">
-                <h4>Redes Sociales</h4>
-                <div class="social_icon">
-                    <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-                    </div>
-                    <div class="social-link">
-                       <a href="#">Veggiedén Unav</a> 
-                    </div>
-                </div>
-                <div class="social_icon">
-                    <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
-                    </div>
-                    <div class="social-link">
-                        <a href="#">Veggiedén UNAV</a>
-                    </div>
-                </div>
-                <div class="social_icon">
-                    <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
-                    </div>
-                    <div class="social-link">
-                        <a href="#">@veggieden_unav</a>
-                    </div>
-                </div>
-                <div class="social_icon">
-                    <div class="social_icon-font">
-                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-                    </div>
-                    <div class="social-link">
-                        <a href="#">Veggieden Unav</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>©2022. Veggieden. Todos los Derechos Reservados.</p>
-        </div>
-    </section>
-    <!-- ======================== Footer Section Start ======================== -->
-
-</footer>
 </html>
